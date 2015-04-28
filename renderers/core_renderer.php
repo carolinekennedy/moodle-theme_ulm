@@ -182,7 +182,7 @@ require_once($CFG->dirroot.'/course/renderer.php');
                 $unreadmessages = '';
             }
 
-            $branchlabel = $badge.'<i class="fa fa-user"></i>'. $USER->firstname;
+            $branchlabel = $badge.'<i class="fa fa-user"></i>'. fullname($USER);
             $branchurl   = new moodle_url('/my/index.php');
             $branchtitle = get_string('mydashboard', 'theme_ulm');
             $branchsort  = 1004;
