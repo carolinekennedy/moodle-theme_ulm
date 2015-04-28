@@ -1,0 +1,490 @@
+/* 1.5 dpr */
+@media 
+(-webkit-min-device-pixel-ratio: 1.5), 
+(min-resolution: 144dpi){ 
+  .navbar.menu .nav > li > a em i.langicon {background: @darkenmaincolour url([[pix:theme|earthx2]]) center center no-repeat; background-size: 20px 20px;}
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 979px) {
+	
+	.nav-collapse.active {
+		margin-bottom: 15px;
+	}
+	
+	.navbar .nav > li {border: none;}
+	
+	.navbar .btn-navbar {background: none; margin-right: 20px;}
+	.navbar .btn-navbar:hover, .navbar .btn-navbar:focus, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {background: none;}
+	.navbar .btn-navbar .fa-bar {box-shadow: none; border-radius: 0; background: #fff; height: 3px;}
+	.navbar.menu .nav > li > a {font-weight: normal;}
+	
+	#rightbuttons {background: none;}
+	#rightbuttons #topsearch {display: none;} 
+	#rightbuttons #topsearch #searchdropdown {height: 40px; min-width: 200px; border-right: 1px solid @menusep; z-index: 0;}
+	#rightbuttons #topsearch #searchdropdown input[type=text] {height: 40px; font-style: 1.2em;}
+	table.rolecap td {line-height: 1.8em;}
+	.navbar.menu .navbar-inner { padding: 0 20px 0 15px;}
+
+#rightbuttons .help_btn {
+	float: left;
+	border-left: none;
+	position: relative;
+    left: -87px;
+	top: -49px;
+}
+
+#rightbuttons #topsearch .searchbtn {
+border-left: none;
+border-right: none;
+float: left;
+position: relative;
+left: -140px;
+top: 3px;	
+}
+
+#rightbuttons #topsearch {
+display: table;
+}
+
+#rightbuttons #topsearch #searchdropdown input[type=text] {
+height: 40px;
+font-style: 1.2em;
+position: relative;
+top: -45px;
+}
+
+.dd_extra{display:block}
+.dd_extra li{list-style: none; }
+
+.dd_extra_search input[type=text] {
+	width: 70%;
+	margin: 0;
+	padding: 5px;
+}
+
+.dd_extra .help_btn, .dd_extra .dd_extra_login {
+	background: none;
+	padding: 10px 15px 11px 0;
+	margin-right: 0;
+	color: #fff;
+	font-size: 1.1em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 2px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	}
+
+.dd_extra .help_btn:hover, .dd_extra .dd_extra_login:hover {
+	background: #3e4041;
+}
+
+.dd_extra .help_btn:hover a, .dd_extra .dd_extra_login:hover a {
+	color: #fff;
+}
+
+.dd_extra .help_btn:hover i, .dd_extra .dd_extra_login:hover i {
+	background: #595a58;
+}
+	
+.navbar .nav {
+padding-bottom: 0;
+}	
+
+.dd_extra ul{
+	margin: 0;
+}
+.nav-collapse .nav {
+	margin: 0;
+}
+
+.dd_extra .help_btn i, .dd_extra .dd_extra_login i  {
+background: #647b88;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+padding: 6px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 17px;
+vertical-align: middle;
+text-align: center;
+width: 30px;
+color: #fff;
+}
+
+.dd_extra_search {height: 50px;}
+
+.dd_extra li > a i.fa{margin:0 9px 0 10px;}
+.dd_extra li > a{color: #fff; display: block;}
+
+.dd_extra .searchbtn{
+	background: none;
+	padding: 10px 15px 11px 0;
+	margin-right: 0;
+	color: #fff;
+	font-size: 1.1em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	}
+
+.dd_extra .searchbtn:hover {
+	
+}
+
+.dd_extra .searchbtn i {
+background: #647b88;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+padding: 6px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 17px;
+vertical-align: middle;
+text-align: center;
+width: 30px;
+color: #fff;
+}
+
+.dd_extra #searchdropdownmenu {
+position: relative;
+top: -40px;
+left: 46px;
+}
+
+.dd_extra li > a i.fa{margin:0 9px 0 10px;}
+.dd_extra .searchbtn li > a i.fa-search{margin:0 9px 0 10px;}
+i.fa.fa-search {
+margin: 0 9px 0 10px;
+}
+
+.navbar .nav-collapse.active>.nav>li>a {
+  padding-left: 0;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+body {padding: 0;}
+
+#page #page-content, .navbar .header-text-container, #page-navbar {
+	padding: 0 20px;
+	@boxsizing();
+}
+
+.navbar {
+	.header-text-container {
+		.header-text.header-left {
+			line-height: normal;
+			height: auto;
+		}
+		.header-text.header-right {
+			line-height: normal;
+			height: auto;
+		}
+	}
+} 
+
+body .row-fluid aside.block-region {background: none; clear: none}
+
+
+.navbar .brand {float: right; padding: 5px 0 5px 20px;}
+
+#page-footer .row-fluid .block-region {min-height: 0;}
+
+#page-report-log-user form {margin-bottom: 15px;}
+.course-content ul.topics li.section .content {margin: 0 10px}
+
+.user-enroller-panel {left: 40px!important;}
+
+#page-course-view-topics .controls td, #page-course-view-site .controls td {padding: 0 5px;}
+
+}
+
+@media (max-width: 656px) {
+
+
+}
+
+@media (max-width: 480px) {
+	.navbar {
+		.brand {
+			img {
+				width: 100%;
+			}
+		}
+		
+		.header-text-container {
+			.header-text {
+				.header-left {
+					line-height: normal;
+				}
+				.header-right {
+					line-height: normal;
+				}
+			}
+		}
+		
+	}
+		
+}
+
+
+
+@media (min-width: 1200px){
+	.row-fluid .desktop-first-column {
+		width: 275px;
+		}
+	.row-fluid .span3{
+		width: 270px;
+		float: right;
+		margin-left: 0.564103%;
+	}
+	
+	}
+
+
+@media (min-width: 1300px){
+	
+	.row-fluid .span8{
+		width: 69.811966%;
+	}
+	.row-fluid .span9{
+		width: 76.6%;
+	}
+		}
+		
+@media (min-width: 1400px){
+	
+	.row-fluid .span8{
+		width: 71.811966%;
+		
+	}
+	.row-fluid .span9{
+		width: 77.6%;
+	}
+		}
+
+@media (min-width: 1500px){
+	
+	.row-fluid .span8{
+		width: 74.811966%;
+		
+	}
+	.row-fluid .span9{
+		width: 79.6%;
+	}
+		}
+		
+@media (min-width: 1600px){
+	
+	.row-fluid .span8{
+		width: 75.811966%;
+		
+	}
+	.row-fluid .span9{
+		width: 80.6%;
+	}
+		}
+		
+@media (min-width: 1700px){
+	
+	.row-fluid .span8{
+		width: 77.811966%;
+		
+	}
+	.row-fluid .span9{
+		width: 81.6%;
+	}
+		}	
+		
+@media (min-width: 1800px){
+	
+	.row-fluid .span8{
+		width: 78.811966%;
+		
+	}
+	.row-fluid .span9{
+		width: 82%;
+	}
+		}	
+		
+@media (max-width: 979px){
+	#rightbuttons{
+	float: left;
+	padding-left: 84px;
+padding-bottom: 35px;
+	}
+	
+	#rightbuttons:before{
+	content: "\f002";
+	font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;	
+	}
+	
+	#rightbuttons:before{
+  content: "\f002";
+  color: #fff;
+  display:block;
+  font-size: 25px;
+  position: relative;
+left: -75px;
+background: #647b88;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;
+padding: 6px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+font-size: 17px;
+vertical-align: middle;
+text-align: center;
+width: 30px;
+}
+	
+	#rightbuttons #loginbtn {
+		border-right: none;
+		top: 50px;
+		left: -349px;
+		position: relative;
+		
+		}
+
+		
+	#rightbuttons #topsearch #searchdropdown {
+		border-right: none;
+		position: relative;
+		top: -38px;
+		left: -35px;
+		}
+		
+		#rightbuttons #topsearch #searchdropdown {
+border-right: none;
+position: relative;
+top: 0px;
+left: -87px;
+}
+
+	
+	#searchdropdown {
+		border-right: none;
+		}
+		
+		
+	#undefined-sticky-wrapper{
+		height: auto!important;
+	}	
+	
+	
+	.nav-collapse .dropdown-menu li + li a {
+		margin-bottom: 0;
+		}
+		
+	.dropdown-menu>li:first-child {
+		padding-bottom: 0px;
+		}	
+		
+	.searchbtn{display: inherit}
+	
+	#rightbuttons .help_btn > li > a:hover{background:#595a58}	
+	
+	#rightbuttons .help_text{
+	display:block; 
+	padding: 10px 15px 11px 0;
+	margin-right: 0;
+	color: #fff;
+	font-size: 16px;
+	position: relative;
+	top: -35px;
+	left: 45px;
+	}
+	
+	.navbar .nav > li > a:hover, .navbar .nav>li>a:focus{background:#3e4041}
+
+	.nav-collapse .dropdown-menu a{color:#333;font-size:1.0em}
+	.nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus{background:#3e4041}
+	.nav-collapse .active{height:100%}
+	
+	#rightbuttons .searchbtn {
+display: block;
+}
+
+#rightbuttons #topsearch #searchdropdown input[type=text]{
+	font-weight: bold;
+}
+
+.userpicture{margin:10px;}
+
+#rightbuttons{display: none}
+	
+}
+
+@media (min-width: 385px) and (max-width: 434px) {
+	#rightbuttons .help_btn {
+float: left;
+border-left: none;
+position: relative;
+left: -87px;
+top: -123px;
+position: relative;
+}
+	
+	
+}
+
+
+@media (min-width: 320px) and (max-width: 385px) {
+	
+		
+	#rightbuttons #loginbtn {
+		left: -253px;
+		top: 60px;
+		}	
+		
+	 #rightbuttons #topsearch #searchdropdown {
+	 top:-90px;
+	 }
+	 
+	 #rightbuttons .help_btn {
+	float: left;
+	border-left: none;
+	position: relative;
+	left: -87px;
+	top: -163px;
+	}
+	
+	#rightbuttons #topsearch .searchbtn {
+		left: -97px;
+		top: -43px;
+		}
+		
+	#rightbuttons #topsearch #searchdropdown {
+		top: -40px;
+		left: -45px;
+		}	
+		
+	#rightbuttons .help_btn {
+		left: -87px;
+		top: -172px;
+		}	
+		
+	 	}
+			
+
+

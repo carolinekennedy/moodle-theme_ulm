@@ -1,0 +1,103 @@
+.logininfo {
+    padding: 0;
+    float: right;
+    width: calc(~"100% - 50px");
+}
+
+#page-header {
+    margin: 0;
+    #profilepic,
+    #socialheading,
+    ul.socials {
+    	text-align: center;
+    }
+}
+
+#page-admin-upgradesettings #page-navbar {
+    nav {
+        ul {
+            margin: 0;
+            list-style: none;
+            li {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+#middle-blocks {
+	.span4 {min-height: 0;}
+}
+
+.navbar {
+	.btn-navbar {
+		.icon-bar {margin-left: 0; margin-right: 0;}
+	}
+}
+
+.editor_atto {
+	.editor_atto_toolbar {
+		width: 99%;
+	}
+	.editor_atto_content_wrap {
+		width: 99%;
+	}
+}
+
+.moodle-actionmenu .menubar li {
+    margin-right: 6px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.moodle-actionmenu[data-enhanced].show {
+    .menu {
+        li {
+            a {
+                border: none;
+                padding: 2px 1em;
+                &::before {
+                    padding-right: 5px;
+                }
+                &:hover {
+                    color: @lighttext;
+                    background: @bghover;
+                    span {
+                    	color: @iconcolour;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#categoryquestions {
+	thead {
+		tr {
+			th {
+				background: @secondarycolour;
+                color: @lighttext;
+				a {color: @lighttext;}
+			}
+		}
+	}
+}
+.course-content ul.topics li {
+    &.current {
+        background:#FCF1E6;
+    }
+}
+#page-admin-plugins .generalbox {
+    overflow: scroll;
+}
+
+.block-region {
+	.block_login {
+		.header {
+			.block_action {
+				display: none;
+			}
+		}
+	}
+}

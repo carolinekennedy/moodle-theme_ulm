@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    src: url('[[setting:fontwww]]fontawesome-webfont.eot?v=3.2.1');
+    src: url('[[setting:fontwww]]fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'),
+                url('[[setting:fontwww]]fontawesome-webfont.woff?v=3.2.1') format('woff'),
+                url('[[setting:fontwww]]fontawesome-webfont.ttf?v=3.2.1') format('truetype'),
+                url('[[setting:fontwww]]fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+}
+@font-face {
+    font-family: 'meta';
+    font-weight: normal;
+    font-style: normal;
+    src: url('[[setting:fontwww]]meta-normal-webfont.eot');
+    src: url('[[setting:fontwww]]meta-normal-webfont.eot?#iefix') format('embedded-opentype'),
+                url('[[setting:fontwww]]meta-normal-webfont.woff') format('woff'),
+                url('[[setting:fontwww]]meta-normal-webfont.ttf') format('truetype'),
+                url('[[setting:fontwww]]meta-normal-webfont.svg#meta-normal') format('svg');
+}
+@font-face {
+    font-family: 'meta';
+    font-weight: bold;
+    font-style: normal;
+    src: url('[[setting:fontwww]]meta-bold-webfont.eot?v=3.2.1');
+    src: url('[[setting:fontwww]]meta-bold-webfont.eot?#iefix') format('embedded-opentype'),
+                url('[[setting:fontwww]]meta-bold-webfont.woff') format('woff'),
+                url('[[setting:fontwww]]meta-bold-webfont.ttf') format('truetype'),
+                url('[[setting:fontwww]]meta-bold-webfont.svg#meta-bold') format('svg');
+}
+
+body{
+    background: @bgcolour url([[setting:pagebackground]]) repeat;
+    font-size: [[setting:bodysize]];
+    font-weight: [[setting:bodyweight]];
+    font-family: 'meta';
+}
+
+h1, h2, h3, h4, h5, h6,
+.back-to-top,
+.socials p,
+#socialheading,
+.forumpost .subject,
+.block_login label,
+body,
+.block_login input[type="submit"],
+.forumpost .commands {
+    font-family: 'meta';
+}
+
+.navbar.menu , #rightbuttons {
+    background: @themecolor;
+}
+
+.block-region .block .header {
+    background: @themesecondarycolor;
+}
+
+a, a:visited, .logininfo a, #page-footer .block-region .block .content a {
+    color: @linkcolour;
+    &:hover {
+        color: @linkhovercolour;
+    }
+}
+
+.color{
+    color: @themecolor;
+}
+
+h1#title,
+h1,h2,h3,h4,h5,h6 {
+    color: @themecolor;
+}
+
+#region-main h2,
+#region-main h2.main {
+    background: @themesecondarycolor;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu li a:focus,
+.dropdown-submenu:hover a,
+.dropdown-submenu:focus a {
+    background-color: @themecolor;
+    filter: none;
+}
+
+.breadcrumb-button input[type="submit"],
+input[type=submit],
+#notice .singlebutton+.singlebutton input,
+.submit.buttons input[name="cancel"],
+input.form-submit, input#id_submitbutton,
+input#id_submitbutton2,
+.path-admin .buttons input[type="submit"],
+td.submit input,
+input[type=button],
+.file-picker .fp-upload-btn,
+.btn-primary,
+.btn,
+button,
+.questionbank input[type=submit] {
+    background: @themesecondarycolor;
+    color: @darktext;
+    &:hover,
+    &:active,
+    &:focus {
+        background: @buttonhover;
+        color: @lighttext;
+    }
+}
+
+footer,
+#page-footer {
+    background: @footerbackground;
+    color: @footercolor;
+}
+
+footer .block-region .block .header,
+#page-footer .block .header  {
+    background: none;
+}
+
+footer .block-region .block .header h2,
+#page-footer .block .header .title h2
+#page-footer .block .header .title h2:before  {
+    color: @footercolour;
+}
+
+#page-footer hr {
+    border: none;
+}
+
+#page-footer a {
+    color: @footercolour;
+    &:hover {
+        color: @linkhovercolour;
+    }
+}
+
+.marketing-image1 {
+    background: url([[setting:marketing1image]]) no-repeat;
+}
+
+.marketing-image2 {
+    background: url([[setting:marketing2image]]) no-repeat;
+}
+
+.marketing-image3 {
+    background: url([[setting:marketing3image]]) no-repeat;
+}
+
+.marketing-image1,
+.marketing-image2,
+.marketing-image3 {
+    background-size: contain;
+    background-position: center top;
+    width: 100%;
+    height: [[setting:marketingheight]];
+    margin-bottom: 5px;
+}
+
+.socials img:hover{
+    -webkit-box-shadow: px 0px 10px 0px @themecolor;
+    -moz-box-shadow: 0px 0px 10px 0px @themecolor;
+    box-shadow: 0px 0px 10px 0px @themecolor;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.nav-tabs>li>a {
+    background-color: @themecolor;
+    &:hover {
+        background-color: @themesecondarycolor;
+    }
+}
+
+#page-mod-quiz-edit .questionbankwindow.block div.header {
+    background: @themecolor;
+}
+
+/* @end */
+
+.back-to-top{
+    position: fixed;
+    bottom: 2em;
+    left: 50%;
+    display: none;
+    text-align:center;
+    font:11px/100%;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:@themecolor;
+    [class^="icon-"] {
+        font-size: 3em;
+    }
+}
+
+.back-to-top p{
+    margin-top: 5px;
+}
+
+.back-to-top:hover{
+    color:@themesecondarycolor;
+    text-decoration: none;
+}
+
+/* @group Performance Information */
+.performanceinfo {
+    bottom:0;
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #E1E1E1;
+    font-style: normal;
+    var{
+        font-size:1.2em;
+        background: @themecolor;
+        padding: 5px;
+        border-radius: 5px;
+        color: #fff !important;
+        white-space: nowrap;
+    }
+    .span3 {
+        text-align: center;
+    }
+    h2 {
+        font-size: 14px;
+        color: #888;
+        line-height: 14px;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        margin-top: 5px;
+        &:before {
+            font-family: FontAwesome;
+            font-size: 1.65em;
+            margin-right: .3em;
+            color: @themecolor;
+            content: "\f05a";
+        }
+    }
+    span{
+        color:#444;
+        display: block;
+    }
+    #load:before {
+        font-family: FontAwesome;
+        font-size: 1em;
+        margin-right: .3em;
+        color: #fff;
+        font-style: normal;
+        font-weight: 100;
+        content: "\f017";
+    }
+    #memory:before {
+        font-family: FontAwesome;
+        font-size: 1em;
+        margin-right: .3em;
+        color: #fff;
+        font-style: normal;
+        content: "\f0e4";
+    }
+    #included:before {
+        font-family: FontAwesome;
+        font-size: 1em;
+        margin-right: .3em;
+        color: #fff;
+        font-style: normal;
+        content: "\f16c";
+    }
+    #db:before {
+        font-family: FontAwesome;
+        font-size: 1em;
+        margin-right: .3em;
+        color: #fff;
+        font-style: normal;
+        content: "\f181";
+    }
+}
+
+ul.breadcrumb span.divider {
+    display: none;
+}
+
+ul.breadcrumb {
+    li {
+        &:after {
+            content: "[[setting:navbarsep]]";
+            font-family: FontAwesome;
+            font-size: 1.1em;
+            margin: 0px 6px 0px 3px;
+            color: @themecolor;
+        }
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+.block_settings .block_tree .collapsed .tree_item.branch::before,
+.jsenabled .block_settings .block_tree .collapsed .tree_item.branch::before,
+.block_navigation .block_tree .collapsed .tree_item.branch::before,
+.jsenabled .block_navigation .block_tree .collapsed .tree_item.branch::before {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 0 5px 8.7px;
+    border-color: transparent transparent transparent #999;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.block_settings .block_tree .tree_item.branch::before,
+.jsenabled .block_settings .block_tree .tree_item.branch::before,
+.block_navigation .block_tree .tree_item.branch::before,
+.jsenabled .block_navigation .block_tree .tree_item.branch::before {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 8.7px 5px 0 5px;
+    border-color: #999 transparent transparent transparent;
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.block a i {color: #999;}
+
+.block_navigation .block_tree .tree_item.branch.navigation_node::before {
+    display: none;
+}
+
+.block {
+    .content {
+        .calendartable {
+            caption {
+                margin: 0;
+            }
+            h3 {
+                margin: 15px 0 0;
+            }
+        }
+    }
+}

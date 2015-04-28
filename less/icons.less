@@ -1,0 +1,636 @@
+.block_settings .block_tree .tree_item.branch,
+.jsenabled .block_settings .block_tree .collapsed .tree_item.branch,
+.block_navigation .block_tree .tree_item.branch,
+.jsenabled .block_navigation .block_tree .collapsed .tree_item.branch {
+  background: none;
+  position: relative;
+}
+
+a [class^="fa-"], a [class*=" fa-"],
+[class^="fa-"], [class*=" fa-"] {
+  text-align: left;
+  display: inline-block;
+  width: 20px;
+  margin: 0 5px;
+}
+
+
+.socials img {
+    border-radius:5px;
+    width: 28px;
+    height: 28px;
+    margin-top: 2px;
+}
+
+.breadcrumb-button a.btn {
+    color: #fff;
+}
+
+/* @group Social Buttons */
+
+ul.socials {
+    text-align: right;
+    li {
+        text-align: right;
+        display: inline-block;
+    }
+    p {
+        font-weight: normal;
+        color: #666;
+        font-size: 1.1em;
+    }
+    a {
+        display: block;
+        font-family: FontAwesome;
+        color: #bbb;
+        font-size: 2.5em;
+        line-height: 25px;
+        padding-left: 7px;
+        text-decoration: none;
+    }
+}
+
+a.vk .fa-stack,
+a.website .fa-stack,
+a.ios .fa-stack,
+a.android .fa-stack,
+a.skype .fa-stack,
+a.instagram .fa-stack {
+  font-size: .5em;
+  vertical-align: -5px;
+}
+
+a.facebook:hover, a.facebook:focus {
+    color: #4a6ea9;
+}
+a.website .fa-stack:hover, a.fa-sign-blank:focus {
+    color: [[setting:themecolor]];
+}
+a.skype .fa-stack:hover, a.fa-sign-blank:focus {
+    color: #00adf7;
+}
+a.apple .fa-stack:hover, a.fa-sign-blank:focus {
+    color: #4a6ea9;
+}
+a.instagram .fa-stack:hover, a.fa-sign-blank:focus {
+    color: #a5674a;
+}
+a.ios .fa-stack:hover, a.fa-sign-blank:focus {
+    color: #000;
+}
+a.android .fa-stack:hover, a.fa-sign-blank:focus {
+    color: #98cd32;
+}
+a.vk .fa-stack:hover, a.fa-sign-blank:focus {
+    color: #4a6ea9;
+}
+a.twitter:hover, a.twitter:focus {
+    color: #00aced;
+}
+a.googleplus:hover, a.googleplus:focus {
+    color: #f42941;
+}
+a.flickr:hover, a.flickr:focus {
+    color: #ff3096;
+}
+a.pinterest:hover, a.flickr:focus {
+    color: #de0002;
+}
+a.instagram:hover, a.instagram:focus {
+    color: #b99c6b;
+}
+a.youtube:hover, a.youtube:focus {
+    color: #f42941;
+}
+a.pinterest:hover, a.pinterest:focus {
+    color: #f42941;
+}
+a.linkedin:hover, a.linkedin:focus {
+    color: #4A9CC9;
+}
+
+#socialheading {
+  text-align: right;
+  color: #fff;
+  letter-spacing: .2em;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.nav-tabs>li>a {
+    color: #fff;
+}
+
+#page-navbar img.iconhelp,
+.forumsearch input[type=text] {
+    margin-right: 5px;
+}
+
+.forumpost {
+    clear: both;
+}
+
+input.form-submit {
+    margin: 3px 0 3px 5px;
+}
+
+#notice {
+    text-align: center;
+    .buttons {
+        text-align: center;
+        .singlebutton {
+            float: none;
+        }
+    }
+}
+
+#page-mod-data-view table {
+    clear: both;
+}
+
+/* @end */
+
+
+/* @group Edit Buttons */
+
+.editing_update {
+    border-left: 2px solid #999;
+    padding-left: 7px;
+}
+
+.editing_duplicate {
+    padding-right: 7px;
+}
+
+.editing_delete {
+    border-right: 2px solid #999;
+    border-left: 2px solid #999;
+    padding-right: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.section .activity span,
+.commands,
+.moodle-core-dragdrop-draghandle {
+    img {
+        display: none;
+    }
+}
+
+#page-mod-glossary-view .commands img,
+#page-calendar-view .commands img {
+    display: inline;
+}
+
+.commands a {
+    padding-right: 5px;
+}
+
+.commands a:hover {
+    text-decoration: none;
+    color: [[setting:themesecondarycolor]];
+}
+
+.editing_hide,
+.editing_show {
+    padding-left: 7px;
+}
+
+.editing_move {
+    padding-right: 7px !important;
+}
+
+.editing_move:hover {
+    cursor:move;
+}
+
+.editing_title img {
+    display: none !important;
+}
+
+.editing_delete::before {
+    .icon("\f00d ");
+    color: red;
+}
+
+.editing_move,
+.moodle-core-dragdrop-draghandle {
+    &::before {
+        .icon("\f047 ");
+    }
+    &:hover {
+        cursor: move;
+    }
+}
+
+.editing_moveright::before {
+    .icon("\f061 ");
+}
+
+.editing_moveleft::before {
+    .icon("\f060 ");
+}
+
+.editing_update::before,
+.editing_edit::before {
+    .icon("\f013 ");
+}
+
+.editing_duplicate::before {
+    .icon("\f0c5 ");
+    padding-right: 5px;
+}
+
+.editing_title::before {
+    .icon("\f040 ");
+}
+
+.editing_hide::before {
+    .icon("\f06e ");
+}
+
+.editing_show::before {
+    .icon("\f070 ");
+}
+
+.editing_assign::before,
+.editing_roles::before {
+    .icon("\f084 ");
+}
+
+.editing_groupsnone::before {
+    .icon("\f007 ");
+}
+
+.editing_groupsvisible::before {
+    .icon("\f0c0 ");
+}
+
+.editing_groupsseparate::before {
+    .icon("\f234 ");
+}
+
+.toggle-display {
+    &::before {
+        .icon("\f085  \f0dd ");
+    }
+    img {
+        display: none;
+    }
+}
+
+.toggle-display.textmenu {
+    &::before {
+        display: none;
+    }
+}
+
+//show/hide icon in course management
+.listitem {
+    .action-hide {
+        &::before {
+            .icon("\f06e");
+            padding: 0 5px;
+        }
+        img {
+            display: none;
+        }
+    }
+    .action-show {
+        &::before {
+            .icon("\f070");
+            padding: 0 5px;
+        }
+        img {
+            display: none;
+        }
+    }
+    .action-edit {
+        &::before {
+            .icon("\f013");
+            padding: 0 3px;
+        }
+        img {
+            display: none;
+        }
+    }
+    .action-delete {
+        &::before {
+            .icon("\f00d");
+            padding: 0 3px;
+        }
+        img {
+            display: none;
+        }
+    }
+}
+
+//adding cog, highlight and show/hide icons
+.section {
+    .side {
+        .editing_highlight {
+            img {
+                display: none;
+            }
+            &::before {
+                .icon("\f0eb");
+                font-size: 1.4em;
+            }
+        }
+        .editing_showhide {
+            img {
+                display: none;
+            }
+            &::before {
+                .icon("\f06e");
+                font-size: 1.4em;
+            }
+        }
+    }
+    &.current {
+        .editing_highlight {
+            &::before {
+                color: @lightbulb;
+            }
+        }
+    }
+    &.hidden {
+        .editing_showhide {
+            &::before {
+                .icon("\f070");
+            }
+        }
+    }
+    .activity {
+        .section-cm-edit-actions {
+            .toggle-display {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+    .summary {
+        a {
+            .iconsmall {
+                display: none;
+            }
+            &::before {
+                .icon("\f013 ");
+            }
+        }
+    }
+}
+
+//plus icon for adding modules
+.section-modchooser {
+    span.section-modchooser-link {
+        a {
+            img.smallicon {
+                display: none;
+            }
+            &::before {
+                .icon("\f067 ");
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+//block header icons (plus and minus)
+.block {
+    .header .block_action {
+        .block-hider-hide,
+        .block-hider-show {
+            opacity: 0;
+        }
+        &::before {
+            .icon("\f146");
+            position: absolute;
+        }
+    }
+    &.hidden {
+        .header .block_action {
+            &::before {
+                .icon("\f0fe");
+                position: absolute;
+            }
+        }
+    }
+    &.no-header,
+    &.block_adminblock,
+    &.block_fake {
+        .header .block_action {
+                &::before {
+                    display: none;
+                }
+            }
+    }
+    &.block_course_summary {
+        .editbutton {
+            a {
+                img {
+                    display: none;
+                }
+                &::before {
+                    .icon("\f013 ");
+                }
+            }
+        }
+    }
+}
+
+#page-footer .block {
+    .header .block_action {
+        .block-hider-hide,
+        .block-hider-show {
+            opacity: 0;
+        }
+        &::before {
+            .icon("\f146");
+            position: absolute;
+        }
+    }
+    &.hidden {
+        .header .block_action {
+            &::before {
+                .icon("\f0fe");
+                position: absolute;
+            }
+        }
+    }
+}
+
+//footer info icon
+#page-footer {
+    .helplink {
+        a {
+            img {display: none;}
+            &::before {
+                .icon("\f05a");
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+//icons in question info
+.que {
+    .info {
+        .questionflag{
+            .questionflagimage {display: none;}
+            &::before {
+                .icon("\f024");
+            }
+        }
+        .editquestion {
+            a {
+                .iconsmall {display: none;}
+                &::before {
+                    .icon("\f013");
+                    padding-right: 5px;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}
+
+//help icon
+.helptooltip{
+    a {
+        text-decoration: none !important;
+        img{display: none;}
+        &::before {
+            .icon("\f059");
+            padding: 0 10px;
+        }
+    }
+}
+
+//question bank icons
+.categoryquestionscontainer {
+    #categoryquestions {
+        tr {
+            .editaction a {
+                &::before{
+                    .icon("\f013");
+                }
+                img{
+                    display: none;
+                }
+            }
+            .copyaction a {
+                &::before{
+                    .icon("\f0c5");
+                }
+                img{
+                    display: none;
+                }
+            }
+            .previewaction a {
+                &::before{
+                    .icon("\f002");
+                }
+                img{
+                    display: none;
+                }
+            }
+            .deleteaction a {
+                &::before{
+                    .icon("\f00d");
+                }
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//question edit icon
+#page-mod-quiz-edit .questioncontentcontainer {
+    .singlequestion {
+        .questioneditbutton {
+            img {
+                display: none;
+            }
+            &::before {
+                .icon("\f013");
+                float: left;
+                padding-right: 5px;
+            }
+        }
+        .questionpreview {
+            a {
+                text-decoration: none;
+                img{
+                    display: none;
+                }
+                &::before {
+                    .icon("\f002");
+                }
+            }
+        }
+    }
+}
+
+//assignment expand/minimise icons
+.submissionsummarytable,
+.feedbacktable {
+    .summary_assignsubmission_onlinetext_1,
+    .summary_assignfeedback_comments_1 {
+        .expandsummaryicon {
+            opacity: 0;
+        }
+        &::before {
+            .icon("\f0fe");
+            position: absolute;
+        }
+    }
+    .full_assignsubmission_onlinetext_1,
+    .full_assignfeedback_comments_1 {
+        .expandsummaryicon {
+            opacity: 0;
+        }
+        &::before {
+            .icon("\f146");
+            position: absolute;
+        }
+    }
+}
+.feedbacktable {
+    .summary_assignfeedback_comments_1 {
+        .expandsummaryicon {
+            opacity: 0;
+        }
+        &::before {
+            .icon("\f0fe");
+            position: absolute;
+        }
+    }
+    .full_assignsubmission_onlinetext_1 {
+        .expandsummaryicon {
+            opacity: 0;
+        }
+        &::before {
+            .icon("\f146");
+            position: absolute;
+        }
+    }
+}
+
+
+.fa-flask:before {
+content: "\f10c"!important;
+color: @themecolor;}
+
+/*
+.fa-user, .fa-edit, .fa-file, .fa-calendar, .fa-certificate, .fa-envelope, .fa-sign-out{
+margin: 0 17px!important}
+*/
+
+
+/* @end */
