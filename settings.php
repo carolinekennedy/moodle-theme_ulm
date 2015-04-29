@@ -37,11 +37,11 @@ if (!$ADMIN->locate('theme_ulm')) {
     require($CFG->dirroot.'/theme/ulm/settings/colour.php');
     require($CFG->dirroot.'/theme/ulm/settings/frontpagecontent.php');
     require($CFG->dirroot.'/theme/ulm/settings/slideshow.php');
-    require($CFG->dirroot.'/theme/ulm/settings/imageslide.php');
-    require($CFG->dirroot.'/theme/ulm/settings/gridslide.php');
-    require($CFG->dirroot.'/theme/ulm/settings/marketingspots.php');
-    require($CFG->dirroot.'/theme/ulm/settings/social.php');
-    require($CFG->dirroot.'/theme/ulm/settings/mobileapps.php');
-    require($CFG->dirroot.'/theme/ulm/settings/analytics.php');
+//    require($CFG->dirroot.'/theme/ulm/settings/imageslide.php');
+//    require($CFG->dirroot.'/theme/ulm/settings/gridslide.php');
+//    require($CFG->dirroot.'/theme/ulm/settings/marketingspots.php');
+//    require($CFG->dirroot.'/theme/ulm/settings/social.php');
+//    require($CFG->dirroot.'/theme/ulm/settings/mobileapps.php');
+//    require($CFG->dirroot.'/theme/ulm/settings/analytics.php');
 
     require($CFG->dirroot.'/theme/ulm/settings/import.php');
