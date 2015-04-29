@@ -10,12 +10,6 @@ Requirements
 This plugin requires Moodle 2.8+
 
 
-Changes
--------
-
-* 2015-05-28 - First final version, delivered by Synergy Learning
-
-
 Installation
 ------------
 
