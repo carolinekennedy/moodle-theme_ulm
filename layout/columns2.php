@@ -75,7 +75,7 @@ echo $OUTPUT->doctype() ?>
 
             <div id="rightbuttons">
 
-            	<?php if (isloggedin()) { ?>
+					<?php if (isloggedin()) { ?>
                          <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/logout.php"><i class="fa fa-sign-out" title="<?php echo get_string('logout'); ?>"></i><span class="help_text"><?php echo get_string('logout'); ?></span></a>
                     <?php } else { ?>
                          <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/"><i class="fa fa-sign-in" title="<?php echo get_string('login'); ?>"></i><span class="help_text"><?php echo get_string('login'); ?></span></a>
@@ -93,7 +93,7 @@ echo $OUTPUT->doctype() ?>
 				</div>
 				<li class="help_btn">
 					<a title="<?php echo get_string('help'); ?>" href="<?php echo $hashelp ?>">
-						<em><i class="fa fa-question" title="<?php echo get_string('help'); ?>"></i></em>
+						<em><i class="fa fa-question" title="<?php echo get_string('help'); ?>"></i></em><span class="help_text"><?php echo get_string('help'); ?></span>
 					</a>
 				</li>
 
@@ -200,5 +200,6 @@ echo $OUTPUT->doctype() ?>
 </footer>
 
 <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+
 </body>
 </html>

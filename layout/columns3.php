@@ -42,6 +42,7 @@ echo $OUTPUT->doctype() ?>
     <nav role="navigation" class="navbar-inner container-fluid">
         <div class="nav-collapse collapse">
             <?php echo $OUTPUT->custom_menu(); ?>
+
             <div class="dd_extra">
 	            <ul>
 		            <li class="help_btn">
@@ -79,6 +80,7 @@ echo $OUTPUT->doctype() ?>
                     <?php } else { ?>
                          <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/"><i class="fa fa-sign-in" title="<?php echo get_string('login'); ?>"></i><span class="help_text"><?php echo get_string('login'); ?></span></a>
                     <?php }; ?>
+
 	            <div id="topsearch">
 	                <form action="<?php echo $CFG->wwwroot ?>/course/search.php" method="get">
 
@@ -93,7 +95,10 @@ echo $OUTPUT->doctype() ?>
 					<a title="<?php echo get_string('help'); ?>" href="<?php echo $hashelp ?>">
 						<em><i class="fa fa-question" title="<?php echo get_string('help'); ?>"></i></em><span class="help_text"><?php echo get_string('help'); ?></span>
 					</a>
-				</li>            </div>
+				</li>
+
+            </div>
+
         </div>
     </nav>
 </header>
@@ -198,7 +203,8 @@ echo $OUTPUT->doctype() ?>
         <?php require_once(dirname(__FILE__).'/includes/footer.php'); ?>
     </div>
 </footer>
-<script type="text/javascript">(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+
+<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
 
 </body>
 </html>

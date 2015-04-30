@@ -32,6 +32,7 @@ echo $OUTPUT->doctype() ?>
 <?php require_once(dirname(__FILE__).'/includes/header.php'); ?>
 
 <header role="banner" class="menu navbar navbar-fixed-top">
+
 	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
         <span class="fa fa-bar"></span>
         <span class="fa fa-bar"></span>
@@ -74,7 +75,7 @@ echo $OUTPUT->doctype() ?>
 
             <div id="rightbuttons">
 
-            	<?php if (isloggedin()) { ?>
+					<?php if (isloggedin()) { ?>
                          <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/logout.php"><i class="fa fa-sign-out" title="<?php echo get_string('logout'); ?>"></i><span class="help_text"><?php echo get_string('logout'); ?></span></a>
                     <?php } else { ?>
                          <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/"><i class="fa fa-sign-in" title="<?php echo get_string('login'); ?>"></i><span class="help_text"><?php echo get_string('login'); ?></span></a>
@@ -92,7 +93,7 @@ echo $OUTPUT->doctype() ?>
 				</div>
 				<li class="help_btn">
 					<a title="<?php echo get_string('help'); ?>" href="<?php echo $hashelp ?>">
-						<em><i class="fa fa-question" title="<?php echo get_string('help'); ?>"></i></em>
+						<em><i class="fa fa-question" title="<?php echo get_string('help'); ?>"></i></em><span class="help_text"><?php echo get_string('help'); ?></span>
 					</a>
 				</li>
 
