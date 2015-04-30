@@ -47,13 +47,13 @@ echo $OUTPUT->doctype() ?>
 	            <ul>
 		            <li class="help_btn">
 					<a title="<?php echo get_string('help'); ?>" href="<?php echo $hashelp ?>">
-						<em><i class="fa fa-question" title="<?php echo get_string('help'); ?>"></i></em><span class="help_text">Help</span>
+						<em><i class="fa fa-question" title="<?php echo get_string('help'); ?>"></i></em><span class="help_text"><?php echo get_string('help'); ?></span>
 					</a>
 				</li>
 				<li class="dd_extra_search">
 				    <form action="<?php echo $CFG->wwwroot ?>/course/search.php" method="get">
 
-	                    <div class="searchbtn"><i class="fa fa-search" title="Search"></i></div>
+	                    <div class="searchbtn"><i class="fa fa-search" title="<?php echo get_string('searchcourses'); ?>"></i></div>
 
 	                    <div id="searchdropdownmenu">
 	                    <input type="text" size="12" name="search" alt="<?php echo get_string('searchcourses');; ?>" value="<?php echo get_string('searchcourses');; ?>" onFocus="this.value = this.value=='<?php echo get_string('searchcourses');; ?>'?'':this.value;" onBlur="this.value = this.value==''?'<?php echo get_string('searchcourses');; ?>':this.value;" />
@@ -62,9 +62,9 @@ echo $OUTPUT->doctype() ?>
 				</li>
 				<li class="dd_extra_login">
 				    <?php if (isloggedin()) { ?>
-                         <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/logout.php"><i class="fa fa-sign-out" title="<?php echo get_string('logout'); ?>"></i><span class="help_text">Logout</span></a>
+                         <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/logout.php"><i class="fa fa-sign-out" title="<?php echo get_string('logout'); ?>"></i><span class="help_text"><?php echo get_string('logout'); ?></span></a>
                     <?php } else { ?>
-                         <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/"><i class="fa fa-sign-in" title="<?php echo get_string('login'); ?>"></i><span class="help_text">Login</span></a>
+                         <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/"><i class="fa fa-sign-in" title="<?php echo get_string('login'); ?>"></i><span class="help_text"><?php echo get_string('login'); ?></span></a>
                     <?php }; ?>
 				</li>
 
@@ -76,15 +76,15 @@ echo $OUTPUT->doctype() ?>
             <div id="rightbuttons">
 
             	<?php if (isloggedin()) { ?>
-                         <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/logout.php"><i class="fa fa-sign-out" title="<?php echo get_string('logout'); ?>"></i><span class="help_text">Logout</span></a>
+                         <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/logout.php"><i class="fa fa-sign-out" title="<?php echo get_string('logout'); ?>"></i><span class="help_text"><?php echo get_string('logout'); ?></span></a>
                     <?php } else { ?>
-                         <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/"><i class="fa fa-sign-in" title="<?php echo get_string('login'); ?>"></i><span class="help_text">Login</span></a>
+                         <a id="loginbtn" href="<?php echo $CFG->wwwroot;?>/login/"><i class="fa fa-sign-in" title="<?php echo get_string('login'); ?>"></i><span class="help_text"><?php echo get_string('login'); ?></span></a>
                     <?php }; ?>
 
 	            <div id="topsearch">
 	                <form action="<?php echo $CFG->wwwroot ?>/course/search.php" method="get">
 
-	                    <div class="searchbtn"><i class="fa fa-search" title="Search"></i></div>
+	                    <div class="searchbtn"><i class="fa fa-search" title="<?php echo get_string('searchcourses'); ?>"></i></div>
 
 	                    <div id="searchdropdown">
 	                    <input type="text" size="12" name="search" alt="<?php echo get_string('searchcourses');; ?>" value="<?php echo get_string('searchcourses');; ?>" onFocus="this.value = this.value=='<?php echo get_string('searchcourses');; ?>'?'':this.value;" onBlur="this.value = this.value==''?'<?php echo get_string('searchcourses');; ?>':this.value;" />
