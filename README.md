@@ -27,6 +27,7 @@ Copyright
 University of Ulm
 kiz - Media Department
 Team Web & Teaching Support
+Alexander Bias
 
 together with
 
