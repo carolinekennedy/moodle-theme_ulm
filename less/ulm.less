@@ -1465,13 +1465,21 @@ body input[readonly=readonly]:hover {
 h3.section-title{
      background: #7B9BA9 url([[pix:theme|arrow-right]]) right center no-repeat;
      width: 100%;
+     min-height:40px;
      padding: 10px;
      color: #fff;
+     position:relative;
        a{
           color:#fff;
         } 
 }
-
+h3.section-title a{
+	position:absolute;
+	top: 8px;
+	right: 5px;
+	left: 5px;
+	bottom: 5px;
+}
 .course-content .section-summary .summarytext{
     padding:10px;
   	margin-top:0; 
@@ -1550,7 +1558,7 @@ select{
 }
 
 .course-content .single-section .section-navigation .mdl-right{
-	margin-top:-25px!important;
+	/*margin-top:-25px!important;*/
 	padding: 15px 5px 0px 10px;
 	width:auto;
 	margin-left:0px;
@@ -1587,4 +1595,9 @@ select{
 
 .course-content .single-section .section-navigation .mdl-right a{
 	padding:10px 0 0 10px;
+}
+
+.section-navigation.mdl-bottom .jumpmenu{
+	clear:both;
+
 }
